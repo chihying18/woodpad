@@ -1,0 +1,165 @@
+.text-primary{
+	color: #1d96d4
+}
+.text-success {
+    color: #47a86c;
+}
+
+#top .hero h1,#top .hero h3{
+	color: #504d4e;
+	letter-spacing: 2px;
+	width: 100%;
+}
+
+.hero h1 {
+    font-size: 64px;
+    }
+}
+#top .hero h3{
+	font-weight: 300
+}
+.catch{
+	visibility: hidden;
+	animation-name:vpvg;
+    animation-timing-function:ease-in-out;
+}
+.ticket{
+	visibility: hidden;
+	position: absolute;
+	animation-name:imgticket;
+    animation-timing-function:ease-out;
+
+}
+/*promo*/
+.promotion{
+  background: #eee; 
+  border-radius: 20px; 
+  min-height: 220px; 
+  display: flex;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.promotion .col-md-3{
+    padding-right:0;
+    padding-left:0;
+}
+
+.promotion h3{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'open sans','Noto Sans TC','微軟正黑體', sans-serif !important;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.pflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+
+}
+.promo-border{
+border-right: 1px #aeaeae solid;
+border-left: 1px #aeaeae solid;
+}
+.btn-red, .promotion p{
+     font-family: 'Noto Sans TC', sans-serif !important;
+     font-weight: 400;
+}
+@keyframes vpvg{
+    0%{
+        top:100px;
+        opacity: 0;
+       
+    }
+    100%{
+        top:0px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@-webkit-keyframes vpvg{
+    0%{
+        top:100px;
+        opacity: 0;
+
+    }
+    100%{
+        top:0px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes imgticket{
+    0%{
+        top:-250px;
+        opacity: 0;
+        
+    }
+    10%{
+        top:-150px;
+        opacity: 0.3;
+    }
+    20%{
+        top:100px;
+        opacity: 1;
+    }
+	80%{
+        top:100px;
+        opacity: 1;
+    }
+    85%{
+        top:0px;
+        opacity: 0.3;
+    }
+    100%{
+    	top:-100px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes imgticket{
+    0%{
+        top:-250px;
+        opacity: 0;
+        
+    }
+    10%{
+        top:-150px;
+        opacity: 0.3;
+    }
+   
+    20%{
+        top:100px;
+        opacity: 1;
+    }
+	80%{
+        top:100px;
+        opacity: 1;
+    }
+    85%{
+        top:0px;
+        opacity: 0.3;
+    }
+    100%{
+    	top:-100px;
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+}
+@media (max-width: 1184px) and (min-width: 974px) {
+.hero h1 {
+    font-size: 50px;
+    }
+}
+@media(max-width: 980px){
+    .promotion{
+        display: inline-block;
+    }
+    .promo-border{
+    border: 0px;
+}
+}

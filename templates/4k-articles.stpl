@@ -1,0 +1,12 @@
+<div class="col-xs-12 col-sm-6 col-lg-4 article-item">
+	<div class="thumb-outer">
+		<div class="thumb-inner">
+			<a href="{$url}"><img src="images/spacer.gif" data-original="{$tbImg}" class="lazy img-responsive"></a>
+		</div>
+	</div>
+	<div class="text-center">
+		<h3><a href="{$url}">{$title}</a></h3>
+		<p>{$summary}</p>
+		<div class="fb-like" data-href="{$url}" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+	</div>
+</div>

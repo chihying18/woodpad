@@ -1,0 +1,49 @@
+<!-- feature product : begin -->
+
+  <div class="feature text-left " id="{$modelName}" style="background: url(images/{$modelName}_bk.jpg) no-repeat top center;">
+    <div class="row vs-container">
+      <div class="col-md-12" >
+         <h2>{$modelInch}</h2>
+         <h2>{$modelName}</h2>
+         <p>{$title}</p>
+         <img class="productImg" src="{$modelImg}">
+
+       </div>
+                    
+        <div class="col-md-6" >
+         <p>{$summary}</p>
+         <br><br>
+         <p><b>Projection System:</b> {$projection}</p>
+         <p><b>Native Resolution:</b> {$resolution}</p>
+         <p><b>Brightness:</b> {$brightness}</p>
+         <p><b>Contrast Ratio With SuperEco Mode:</b> {$ratio}</p>
+         <p><b>Display Colour:</b> {$displayColour}</p>
+         <p><b>Image Size:</b> {$imageSize}</p>
+         <p><b>Throw Distance:</b> {$throwDistance}</p>
+         <p><b>Keystone:</b> {$keystone}</p>
+         <p><b>Optical Zoom:</b> {$zoom}</p><br>
+         <p><b>Recommended for:</b> <br>
+         {$recommended}</p>
+       </div>
+                    
+        <div class="col-md-6 text-center" >
+          <div id="canvasBox">
+          <canvas id="myCanvas" style=" height: 100%;width: 100%;margin: 0;padding: 0;display: block;">
+            {$radarImg}  //Sorry, your browser doesn't support the "canvas" element.
+          </canvas>
+                        
+          <script>
+            drawRadar(5, 5, 4, 3 ,3, 4, 4, 4); //myCanvas.js
+            {$radarValues}
+          </script>
+          </div>
+
+          <a class="btn" href="{$recommended}" target="_blank">Learn more</a>
+          <a class="btn" href="{$recommended}" target="_blank">Buy now</a>
+
+        </div>
+
+    </div>
+  </div>
+<!-- feature product: end -->
+
